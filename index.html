@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Javascript kindergarden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header>
+    <div class="header_head">
+        <div class="container">
+            <div class="head_inner">
+                <div class="logo">Mykhailo Ovdiienko</div>
+                <nav>
+                    <ul>
+                        <li><a href="#about" class="header__link">About</a></li>
+                        <li><a href="#reverse--section" class="header__link">Reverse</a></li>
+                        <li><a href="#math--section" class="header__link">Sum/Multiply</a></li>
+                        <li><a href="#color--section" class="header__link">Color</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="modal">
+    <div class="form-box">
+        <button id="modalFormCloseButton" class="close-btn">x</button>
+        <div class="form-box--container">
+            <div class="form-box--photo">
+                <img src="img/doc_photo.png">
+            </div>
+            <div class="form-box--information">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, cumque doloremque ducimus et facere hic illo illum incidunt ipsa, nesciunt porro rem ullam velit! Dolore in molestias non praesentium sunt.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section id="welcome">
+    <div class="header_body">
+        <div class="container">
+            <div class="header_body_inner">
+                <div class="left">
+                    <div class="title">
+                        Hi, it's <br><span>Basics of Internet Technologies</span><br>in ChNU
+                    </div>
+                </div>
+                <div class="right">
+                    <img id="my_image" src="img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="about">
+    <div class="container">
+        <div class="section_title">
+            About me
+        </div>
+        <div class="about_text">
+            <p>
+                This is a website created with HTML5 and CSS3 using JavaScript ES6. You can browse the whole git history of this web project on gitlab repository. To view it, ask the owner of this website for link.
+            </p>
+            <p>
+                You can use interactive javascript implementations, such as "Reverse the input", "Sum and multiplication of number", "Choose page background color".
+            </p>
+            <p>
+                Also you can hover the logo in the header to see the modal screen with the information about author.
+            </p>
+            <p>
+                Basically, this website was created under the 4th semester of Computer Science during Basics of Internet Technologies course which are led by Готинчан Тетяна Іванівна in 2022, quarantine studying mode.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="reverse--section">
+    <div class="container">
+        <div class="section_title">
+            Reverse the input
+        </div>
+        <div class="contacts_form">
+            <form action="">
+                <input id="input-text" type="text" placeholder="Enter your value" class="text-box">
+                <textarea name="" id="reverse--result-box" rows="5" placeholder="Your result" class="result-box"></textarea>
+                <button id="reverse--button--result" type="button" class="button">Get the result</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="math--section">
+    <div class="container">
+        <div class="section_title">
+            Sum and multiplication of number
+        </div>
+        <div class="contacts_form">
+            <form action="">
+                <input id="math-text" type="text" placeholder="Enter your value" class="text-box">
+                <textarea name="" id="math-sum--result-box" rows="5" placeholder="Your sum result" class="result-box"></textarea>
+                <textarea name="" id="math-multiply--result-box" rows="5" placeholder="Your multiply result" class="result-box"></textarea>
+                <button id="math--button--result" type="button" class="button">Get the result</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section id="color--section">
+    <div class="container">
+        <div class="section_title">
+            Choose page background color
+        </div>
+        <div class="contacts_form">
+            <form action="">
+                <button id="black-color--button--result" type="button" class="button--black">Black</button>
+                <button id="default-color--button--result" type="button" class="button--default">Default</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <span>© <span id="copyright-year"></span> Mykhailo Ovdiienko. All rights reserved.</span>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/main.js "></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/copyright-year.js"></script>
+<script src="js/hover-modal.js"></script>
+
+</body>
+</html>
