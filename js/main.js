@@ -2,7 +2,6 @@
 document.querySelector('#reverse--button--result').onclick = executeResult;
 function executeResult() {
     let valueText = document.querySelector('#input-text').value;
-    console.log(valueText);
     let valueResult = (('' + valueText).split('').reverse().join(''));
     document.querySelector('#reverse--result-box').innerHTML = valueResult;
 }
@@ -11,7 +10,6 @@ function executeResult() {
 document.querySelector('#math--button--result').onclick = executeMathResult;
 function executeMathResult() {
     let valueText = document.querySelector('#math-text').value;
-    console.log(valueText);
     function getNumbersSum(num){
         return num.toString().split('').reduce(function(a, b) {
             return +a + +b;
